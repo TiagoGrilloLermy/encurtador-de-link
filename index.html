@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encurtador de Links</title>
+
+</head>
+
+<body>
+
+    <main id="container">
+        <h1>Encurtador de Links</h1>
+
+        <label for="linkInput">Insira o link:</label>
+        <input type="text" id="linkInput" placeholder="Cole o link aqui">
+
+        <br><br>
+
+        <button id="shortenButton" onclick="encurtarLink()">Encurtar</button>
+
+        <section id="shortenedLinkContainer">
+            <div id="shortenedLink"></div>
+            <button id="copyButton" onclick="copiarLink()">Copiar link</button>
+        </section>
+
+        <section id="errorContainer"></section>
+
+        <section id="instructions">
+            <p>Para utilizar o encurtador de links, siga estes passos:</p>
+            <ol>
+                <li>Cole o link que deseja encurtar no campo acima.</li>
+                <li>Clique no botão "Encurtar".</li>
+                <li>O link encurtado será exibido abaixo. Clique em "Copiar link" para copiá-lo para a área de transferência.
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/tiago-grillo-lermy/" target="_blank">Desenvolvidor por Tiago Grillo
+            Lermy</a>
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
