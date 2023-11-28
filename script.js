@@ -18,7 +18,7 @@
                     const data = await response.json();
                     const shortenedLinkContainer = document.getElementById("shortenedLinkContainer");
                     shortenedLinkContainer.style.display = "block";
-                    document.getElementById("shortenedLink").innerHTML = "<a href='" + data.id + "' target='_blank'>" + data.id + "</a>";
+                    document.getElementById("shortenedLink").innerHTML = "<a href='https://" + data.id + "' target='_blank'>" + data.id + "</a>";
                 } catch (error) {
                     console.error('Erro ao encurtar o link:', error);
                     const errorContainer = document.getElementById("errorContainer");
@@ -30,7 +30,7 @@
             function copiarLink() {
                 const linkText = document.getElementById("shortenedLink").textContent;
                 const tempInput = document.createElement("input");
-                tempInput.value = linkText;
+                tempInput.value = 'https://'+linkText;
                 document.body.appendChild(tempInput);
                 tempInput.select();
                 document.execCommand("copy");
