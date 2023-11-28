@@ -30,7 +30,7 @@
             function copiarLink() {
                 const linkText = document.getElementById("shortenedLink").textContent;
                 const tempInput = document.createElement("input");
-                tempInput.value = 'https://'+linkText;
+                tempInput.value = linkText;
                 document.body.appendChild(tempInput);
                 tempInput.select();
                 document.execCommand("copy");
