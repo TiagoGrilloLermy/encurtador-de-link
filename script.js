@@ -18,7 +18,7 @@
                     const data = await response.json();
                     const shortenedLinkContainer = document.getElementById("shortenedLinkContainer");
                     shortenedLinkContainer.style.display = "block";
-                    document.getElementById("shortenedLink").innerHTML = "<a href='" + data.id + "' target='_blank'>" + data.id + "</a>";
+                    document.getElementById("shortenedLink").innerHTML = "<a href='https://" + data.id + "' target='_blank'>" + data.id + "</a>";
                 } catch (error) {
                     console.error('Erro ao encurtar o link:', error);
                     const errorContainer = document.getElementById("errorContainer");
